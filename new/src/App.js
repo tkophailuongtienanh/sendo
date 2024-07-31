@@ -5,15 +5,21 @@ import Main from "./view/Main";
 import Foot from "./view/Foot";
 import Header from "./view/Header";
 import { Route, Router, Routes } from "react-router-dom";
+import ProductList from "./view/product/ProductList";
 function App() {
   return (
-    <>
-      <Header></Header>
-      <Routes>
-        <Route path="/" element={<Main />}></Route>
-      </Routes>
-      <Foot></Foot>
-    </>
+    <div className="flex flex-col h-full">
+      <Header className="grow-0"></Header>
+      <div className="grow">
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+          <Route path="/category/:categoryId" element={<ProductList/>}></Route>
+          <Route path="/search/:search" element={<ProductList/>}></Route>
+          <Route path="/product/:id" element></Route> 
+        </Routes>
+      </div>
+      <Foot className="grow-0"></Foot>
+    </div>
   );
 }
 
