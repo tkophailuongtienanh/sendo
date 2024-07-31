@@ -4,7 +4,7 @@ import { memo } from "react";
 const Foot = () => {
   return (
     <div>
-      <section class="d7ed-IB_g3V">
+      <section class="py-5">
         <div class="container flex text-center gap-16">
           <a
             className="basis-1/4"

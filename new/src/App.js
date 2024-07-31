@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="flex flex-col h-full">
       <Header className="grow-0"></Header>
-      <div className="grow">
+      <div className="grow bg-gray-100">
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/category/:categoryId" element={<ProductList/>}></Route>
