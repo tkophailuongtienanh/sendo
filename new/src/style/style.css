@@ -1,0 +1,23 @@
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.nav-link{
+    background-color: #d52220;
+    color: #fff;
+}
+.nav-link a{
+    text-decoration: none;
+}
+.nav-bar{
+    background-color: #ee2624;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-start{
+    justify-content: start;
+}
